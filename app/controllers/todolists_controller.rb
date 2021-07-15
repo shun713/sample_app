@@ -33,7 +33,8 @@ class TodolistsController < ApplicationController
   private
     #ストロングパラメータ コントローラの中でしか呼び出せないようにする
   def list_params
-    params.require(:list).permit(:title,:body)
+    params.require(:list).permit(:title,:body,:image)
+
   end
 
 end
