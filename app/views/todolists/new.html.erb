@@ -1,6 +1,7 @@
 <h1>新規投稿！</h1>
 
 <%= form_with model:@list, url:"/todolists", local:true do |f|%>
+<%#ここの/todolistsにはなにも入ってないから、空欄で入力できる#%>
 <h4>タイトル</h4>
 <%= f.text_field :title %>
 <h4>本文</h4>
